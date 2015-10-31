@@ -1,3 +1,6 @@
+import socket
+import sys
+
 while x<3:
         try:
                 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
